@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="jquery.js"></script>
+    <title>Twittler!</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <script src="jquery.js" type="text/javascript"></script>
     <script src="data_generator.js"></script>
+    <script src="main.js"></script>
   </head>
-  <body>
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
-  </body>
+    <body>
+      <div>
+        <h1>Welcome to Twittler!</h1>
+        <br />
+        <p><img class = "logo" src="img/faketwitter.png"/></p>
+        <br />
+        <ul class="tweetbody">
+          <li class = tweetlist><h2>Your Personalized Twit Feed!</h2></li>
+          <li><h3>Click On <em>Username</em> Below To View User's Twits!</h3></li>
+          <li><h4>(List Automatically Updates Every 15 Seconds)</h4></li>
+          <br />
+          <li><button id="showbutton" class="hidebutton">Show All Users</button></li>
+          <br />
+          <br />
+        </ul>
+      </div>
+    </body>
 </html>

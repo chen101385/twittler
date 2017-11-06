@@ -1,0 +1,61 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: azure;
+}
+
+h1 {
+    margin: auto;
+    width: 50%;
+    position: relative;
+    top: 20px;
+    
+}
+
+h2 {
+    font-style: italic
+    float:left;
+    top: 200px;
+    left: 10px;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 10%;
+    position: relative;
+    top: -30px;
+}
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li.update {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    display:block;
+    color: black;
+    text-align: center;
+    padding: 15px 15px;
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: 2px;
+    border-color: deepskyblue;
+    border-radius: 40px;
+    font-size: 15px;
+    width: 20%;
+}
+
+button {
+    position: relative;
+    background-color: light lightgrey;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 14px;
+}
+
+.hidebutton {
+    display: none;
+}
